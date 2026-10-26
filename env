@@ -67,3 +67,12 @@
 #--------------------------------------------------------------------
 
 # logger.threshold = 4
+
+#--------------------------------------------------------------------
+# ADMIN
+#--------------------------------------------------------------------
+
+# Kredensial admin dipakai saat menjalankan `php spark db:seed UserSeed`.
+# WAJIB diisi. Jangan gunakan password default.
+# ADMIN_USERNAME = 'admin'
+# ADMIN_PASSWORD = 'ganti-dengan-password-kuat'

@@ -46,6 +46,12 @@ $RECYCLE.BIN/
 Vagrantfile
 
 #-------------------------
+# Node
+#-------------------------
+/node_modules/
+npm-debug.log*
+
+#-------------------------
 # Temporary Files
 #-------------------------
 /writable/cache/*
