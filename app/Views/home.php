@@ -57,7 +57,7 @@ $categoryIcons = [
 <h1 class="font-display mt-5 text-4xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Bahan masak segar, <span class="text-emerald-600">langsung ke dapur Anda.</span></h1>
 <p class="mt-5 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">Sayuran, buah, bumbu, dan sembako pilihan dari petani lokal. Dipesan pagi, diantar dengan rapi.</p>
 <div class="mt-8 flex flex-wrap items-center gap-3">
-<a href="#produk" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-200 transition hover:bg-emerald-700">Belanja Sekarang <i class="ph-bold ph-arrow-right"></i></a>
+<a href="#produk" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-200 transition hover:bg-emerald-700">Belanja Sekarang <i class="ph ph-arrow-right"></i></a>
 <a href="#kategori" class="inline-flex items-center gap-2 rounded-xl border border-emerald-200 bg-white px-6 py-3.5 text-sm font-bold text-emerald-700 transition hover:border-emerald-300">Lihat Kategori</a>
 </div>
 <div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-slate-500">
@@ -97,7 +97,7 @@ $categoryIcons = [
 <h2 class="font-display mt-2 text-3xl font-extrabold tracking-tight text-slate-900">Belanja sesuai kategori</h2>
 <p class="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500">Temukan kebutuhan dapur lebih cepat lewat kategori yang sudah dikelompokkan.</p>
 </div>
-<a href="/#produk" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700">Semua produk <i class="ph-bold ph-arrow-right"></i></a>
+<a href="/#produk" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700">Semua produk <i class="ph ph-arrow-right"></i></a>
 </div>
 
 <?php if ($categories === []): ?>
@@ -115,7 +115,7 @@ $categoryIcons = [
 </div>
 <h3 class="font-display mt-4 text-lg font-bold text-slate-900"><?= esc($category['name']) ?></h3>
 <p class="mt-1 line-clamp-2 text-sm leading-relaxed text-slate-500"><?= esc($category['description'] ?: 'Pilihan produk segar untuk kebutuhan harian.') ?></p>
-<span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600">Lihat produk <i class="ph-bold ph-arrow-right transition group-hover:translate-x-0.5"></i></span>
+<span class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600">Lihat produk <i class="ph ph-arrow-right transition group-hover:translate-x-0.5"></i></span>
 </a>
 <?php endforeach ?>
 </div>
@@ -165,7 +165,7 @@ $categoryIcons = [
 <div class="mt-auto flex items-center justify-between gap-3 pt-4">
 <span class="text-lg font-extrabold text-emerald-700">Rp <?= number_format((int) $product['price'], 0, ',', '.') ?></span>
 <button type="button" onclick="addToCart(<?= (int) $product['id'] ?>)" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 transition hover:bg-emerald-600 hover:text-white" aria-label="Tambah <?= esc($product['name']) ?> ke keranjang">
-<i class="ph-bold ph-plus text-lg"></i>
+<i class="ph ph-plus text-lg"></i>
 </button>
 </div>
 </div>
@@ -280,7 +280,7 @@ $categoryIcons = [
 <span class="text-sm font-semibold text-slate-500">Total</span>
 <span id="cart-total" class="font-display text-2xl font-extrabold text-emerald-700">Rp 0</span>
 </div>
-<a href="#checkout" onclick="toggleCart(false)" class="flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700">Lanjut Checkout <i class="ph-bold ph-arrow-right"></i></a>
+<a href="#checkout" onclick="toggleCart(false)" class="flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700">Lanjut Checkout <i class="ph ph-arrow-right"></i></a>
 <button type="button" onclick="clearCart()" class="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-500 transition hover:border-red-200 hover:text-red-600">Kosongkan Keranjang</button>
 </div>
 </div>
