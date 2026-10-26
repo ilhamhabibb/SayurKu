@@ -1,0 +1,14 @@
+# Folder ini hanya boleh berisi file gambar statis.
+# Blokir eksekusi script di sini kalau ada file lain yang somehow masuk.
+
+<FilesMatch "\.(php|phtml|phar|cgi|pl|py|sh)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+Options -Indexes
