@@ -69,6 +69,13 @@ npm-debug.log*
 /writable/debugbar/*
 !/writable/debugbar/index.html
 
+# Local database (jangan pernah di-commit)
+/writable/database.db*
+/writable/db.sqlite3*
+
+# Artefak screenshot/verifikasi Playwright
+/.playwright-mcp/
+
 php_errors.log
 
 #-------------------------
