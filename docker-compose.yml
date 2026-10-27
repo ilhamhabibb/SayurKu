@@ -4,7 +4,7 @@ services:
   web: 
     build: .
     container_name: ci4_web
-    restart: unless-stopoped
+    restart: unless-stopped
     ports:
       - "80:80"
     environment:
