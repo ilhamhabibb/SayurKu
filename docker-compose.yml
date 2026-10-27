@@ -31,9 +31,9 @@ services:
     networks:
       - sayurku_net
 
-  volumes:
-    db_data:
+volumes:
+  db_data:
 
-  networks:
-    sayurku_net:
-      driver: bridge
+networks:
+  sayurku_net:
+    driver: bridge
