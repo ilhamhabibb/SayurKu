@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  web: 
+    build: .
+    container_name: ci4_web
+    restart: unless-stopoped
+    ports:
+      - "80:80"
+    environment:
+      - CI_ENVIRONMENT=production
+      - database.default.hostname=db
+      - database.default.database=sayurku_db
+      - database.default.username=sayurku
+      - database.default.password=sayur1234
+      - database.default.DBDriver=MySQLi
+    depends_on:
+      - db
+    networks:
+      - sayurku_net
+
+  db:
+    image: mysql:8.0
+    container_name: ci4_db
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=sayur1234
+      - MYSQL_DATABASE=sayurku_db
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - sayurku_net
+
+  volumes:
+    db_data:
+
+  networks:
+    sayurku_net:
+      driver: bridge
